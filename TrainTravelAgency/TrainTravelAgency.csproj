@@ -42,6 +42,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Exceptions\ExternalServiceErrorException.cs" />
+    <Compile Include="Fakes\FakeDistanceCalculationService.cs" />
+    <Compile Include="Fakes\FakeLoggerService.cs" />
+    <Compile Include="Fakes\FakeUserService.cs" />
     <Compile Include="Models\City.cs" />
     <Compile Include="Models\SeatType.cs" />
     <Compile Include="Models\Ticket.cs" />

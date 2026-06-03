@@ -11,6 +11,12 @@ namespace TrainTravelAgency
         private readonly ILoggerService _loggerService;
         private readonly IDistanceCalculationService _distanceCalculationService;
 
+        public ReservationService (IUserService userService, ILoggerService loggerService, IDistanceCalculationService distanceCalculationService)
+        {
+            _userService = userService;
+            _loggerService = loggerService;
+            _distanceCalculationService = distanceCalculationService;
+        }
 
         public double CalculateTicketPriceForUser(double distance, TicketType ticketType, Guid userId)
         {
